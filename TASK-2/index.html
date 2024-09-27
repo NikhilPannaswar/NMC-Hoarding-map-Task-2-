@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Google Maps Example</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="header">
+        <img src="logo.jpeg.jpg" alt="NMC Logo" class="logo">
+        <h1>NMC Skysign Department</h1>
+    </div>
+
+    <div id="category-selector">
+        <p><strong>Select Category:</strong></p>
+        <div class="category-option">
+            <input type="checkbox" id="all" name="category" value="all" checked>
+            <label for="all">All</label>
+        </div>
+        <div class="category-option">
+            <input type="checkbox" id="blue" name="category" value="A">
+            <div class="color-box" style="background-color: blue;"></div>
+            <label for="blue">Category A</label>
+        </div>
+        <div class="category-option">
+            <input type="checkbox" id="red" name="category" value="B">
+            <div class="color-box" style="background-color: red;"></div>
+            <label for="red">Category B</label>
+        </div>
+        <div class="category-option">
+            <input type="checkbox" id="green" name="category" value="C">
+            <div class="color-box" style="background-color: green;"></div>
+            <label for="green">Category C</label>
+        </div>
+    </div>
+
+    <div id="date-selector">
+        <label for="survey-date"><b>Select Survey Date:</b></label>
+        <select id="survey-date" style="font-size: 20px;">
+            <option value="all">Select</option>
+        </select>
+    </div>
+
+    <div id="showAll"><b>Show All</b></div>
+    <div id="map"></div>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+
+    <!-- Include the Google Maps API (Replace YOUR_API_KEY with your actual API key) -->
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCMyEJNxwenYXFS0bjm7k7EZxIZjbco6Gc&libraries=geometry&callback=initMap"
+        async defer></script>
+</body>
+
+</html>
